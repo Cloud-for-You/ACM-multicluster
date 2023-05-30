@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: quay.io/nginx:latest
+        image: nginx:latest
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
