@@ -1,0 +1,8 @@
+---
+namespace: nginx-sample
+resources:
+- namespace.yaml
+- application.yaml
+- channel.yaml
+- subscription.yaml
+- placementrule.yaml

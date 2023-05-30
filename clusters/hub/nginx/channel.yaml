@@ -1,0 +1,8 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: githubcom-hates52-example-app
+spec:
+  pathname: https://github.com/hates52/example-app.git
+  type: GitHub
