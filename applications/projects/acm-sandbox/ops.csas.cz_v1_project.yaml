@@ -7,7 +7,6 @@ metadata:
 spec:
   description: ACM Sandbox project
   environments:
-    # SingleCluster (pouze cluster lab1)
     - name: acm
       type: acm
 
