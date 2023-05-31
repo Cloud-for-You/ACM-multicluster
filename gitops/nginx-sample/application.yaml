@@ -10,3 +10,4 @@ spec:
   componentKinds:
   - group: apps.open-cluster-management.io
     kind: Subscription
+    descriptor: {}
