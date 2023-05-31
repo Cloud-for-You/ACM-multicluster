@@ -1,0 +1,28 @@
+apiVersion: ops.csas.cz/v1
+kind: Project
+metadata:
+  name: acm-sandbox
+  label:
+    app: project
+spec:
+  description: ACM Sandbox project
+  environments:
+    # SingleCluster (pouze cluster lab1)
+    - name: acm
+      type: acm
+
+  limits:
+    - max:
+        cpu: '2'
+        memory: 4Gi
+      type: Pod
+    - defaultRequest:
+        cpu: 250m
+        memory: 512Mi
+      max:
+        cpu: '2'
+        memory: 4Gi
+      type: Container
+    - max:
+        storage: 2Gi
+      type: PersistentVolumeClaim

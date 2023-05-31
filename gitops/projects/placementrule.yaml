@@ -1,0 +1,29 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: $(APPLICATION_NAME)-placement-rule-lab1
+  labels:
+    app: $(APPLICATION_NAME)
+spec:
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterSelector:
+    matchLabels:
+      name: lab1
+
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: $(APPLICATION_NAME)-placement-rule-lab2
+  labels:
+    app: $(APPLICATION_NAME)
+spec:
+  clusterConditions:
+    - type: ManagedClusterConditionAvailable
+      status: "True"
+  clusterSelector:
+    matchLabels:
+      name: lab2
