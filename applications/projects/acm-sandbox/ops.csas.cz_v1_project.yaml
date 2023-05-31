@@ -7,8 +7,8 @@ metadata:
 spec:
   description: ACM Sandbox project
   environments:
-    - name: acm
-      type: rakosnicek
+    - name: rakosnicek
+      type: acm
 
   limits:
     - max:
