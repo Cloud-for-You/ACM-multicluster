@@ -14,7 +14,7 @@ spec:
   placement:
     placementRef:
       kind: PlacementRule
-      name: projects-placement-rule-lab1
+      name: lab1
 
 ---
 apiVersion: apps.open-cluster-management.io/v1
@@ -32,4 +32,4 @@ spec:
   placement:
     placementRef:
       kind: PlacementRule
-      name: projects-placement-rule-lab2
+      name: lab2

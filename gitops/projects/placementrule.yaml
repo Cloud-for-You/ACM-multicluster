@@ -2,7 +2,7 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: projects-placement-rule-lab1
+  name: lab1
   labels:
     app: projects
 spec:
@@ -17,7 +17,7 @@ spec:
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: projects-placement-rule-lab2
+  name: lab2
   labels:
     app: projects
 spec:
