@@ -9,7 +9,7 @@ spec:
   environments:
     - name: rakosnicek
       type: acm
-      sccRanges: 1001010000/10000      #  LAB1-old: 1000990000/10000   LAB2-old: 1001000000/10000
+      sccRanges: 1001020000/10000      #  LAB1-old: 1000990000/10000   LAB2-old: 1001000000/10000
 
   limits:
     - max:
