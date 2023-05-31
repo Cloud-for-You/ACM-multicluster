@@ -1,5 +1,21 @@
 ---
-namespace: nginx-sample
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+configurations:
+- kustomizeconfig.yaml
+
+vars:
+- fieldref:
+    fieldPath: metadata.namespace
+  name: APPLICATION_NAME
+  objref:
+    apiVersion: app.k8s.io/v1beta1
+    kind: Application
+    name: nginx-sample
+
+namespace: nginx-alpha
+
 resources:
 - namespace.yaml
 - application.yaml
