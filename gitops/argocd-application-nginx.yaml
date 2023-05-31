@@ -9,7 +9,7 @@ spec:
     namespace: nginx-sample
     server: ''
   source:
-    path: gitops/nginx
+    path: gitops/nginx-sample
     repoURL: 'https://github.com/hates52/ACM-multicluster.git'
     targetRevision: HEAD
   sources: []
