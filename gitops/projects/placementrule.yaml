@@ -2,9 +2,9 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: $(APPLICATION_NAME)-placement-rule-lab1
+  name: projects-placement-rule-lab1
   labels:
-    app: $(APPLICATION_NAME)
+    app: projects
 spec:
   clusterConditions:
     - type: ManagedClusterConditionAvailable
@@ -17,9 +17,9 @@ spec:
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: $(APPLICATION_NAME)-placement-rule-lab2
+  name: projects-placement-rule-lab2
   labels:
-    app: $(APPLICATION_NAME)
+    app: projects
 spec:
   clusterConditions:
     - type: ManagedClusterConditionAvailable

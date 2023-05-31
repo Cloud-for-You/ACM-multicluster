@@ -8,7 +8,7 @@ configurations:
 vars:
 - fieldref:
     fieldPath: metadata.namespace
-  name: APPLICATION_NAME
+  name: NAMESPACE_NAME
   objref:
     apiVersion: app.k8s.io/v1beta1
     kind: Application

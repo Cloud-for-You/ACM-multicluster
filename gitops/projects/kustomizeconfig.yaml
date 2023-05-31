@@ -1,12 +1,6 @@
 ---
 varReference:
   - apiVersion: apps.open-cluster-management.io/v1
-    kind: PlacementRule
-    path: metadata/name
-  - apiVersion: apps.open-cluster-management.io/v1
-    kind: Subscription
-    path: metadata/name
-  - apiVersion: apps.open-cluster-management.io/v1
     kind: Subscription
     path: spec/channel
   - apiVersion: apps.open-cluster-management.io/v1
