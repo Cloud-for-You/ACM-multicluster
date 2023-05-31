@@ -11,4 +11,4 @@ spec:
       status: "True"
   clusterSelector:
     matchLabels:
-      name: lab2
+      name: lab1
