@@ -1,0 +1,16 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-sample
+spec:
+  destination:
+    name: in-cluster
+    namespace: nginx-sample
+    server: ''
+  source:
+    path: gitops/nginx
+    repoURL: 'https://github.com/hates52/ACM-multicluster.git'
+    targetRevision: HEAD
+  sources: []
+  project: default
