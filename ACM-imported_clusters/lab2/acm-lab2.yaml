@@ -1,0 +1,45 @@
+---
+apiVersion: project.openshift.io/v1
+kind: Project
+metadata:
+  name: lab2
+  labels:
+    cluster.open-cluster-management.io/managedCluster: lab2
+
+---
+apiVersion: cluster.open-cluster-management.io/v1
+kind: ManagedCluster
+metadata:
+  name: lab2
+  namespace: lab2
+spec:
+  hubAcceptsClient: true
+
+---
+apiVersion: agent.open-cluster-management.io/v1
+kind: KlusterletAddonConfig
+metadata:
+  name: lab2
+  namespace: lab2
+spec:
+  proxyConfig:
+    httpProxy:  http://ngproxy-test.csint.cz:8080
+    httpsProxy: http://ngproxy-test.csint.cz:8080
+    noProxy: .cluster.local,.cs-test.cz,.cs.cz,.csin.cz,.csint.cz,.svc,10.0.0.0/16,10.88.88.0/21,100.121.0.0/17,100.121.128.0/17,127.0.0.1,api-int.lab2.ocp4.vs.csint.cz,localhost
+  clusterName: lab2
+  clusterNamespace: lab2
+  applicationManager:
+    enabled: true
+    proxyPolicy: CustomProxy
+  certPolicyController:
+    enabled: true
+  clusterLabels:
+    cloud: auto-detect
+    vendor: auto-detect
+  iamPolicyController:
+    enabled: true
+  policyController:
+    enabled: true
+  searchCollector:
+    enabled: true
+  version: 2.7.4
