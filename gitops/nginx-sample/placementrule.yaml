@@ -4,7 +4,7 @@ kind: PlacementRule
 metadata:
   name: lab1
   labels:
-    app: nginx-sample
+    app: nginx-sample-rakosnicek 
 spec:
   clusterConditions:
     - type: ManagedClusterConditionAvailable

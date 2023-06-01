@@ -4,13 +4,13 @@ kind: Subscription
 metadata:
   name: lab1
   labels:
-    app: nginx-sample
+    app: $(SAS_NAME)
   annotations:
-    apps.open-cluster-management.io/github-path: applications/$(NAMESPACE_NAME)
+    apps.open-cluster-management.io/github-path: applications/$(SAS_NAME)
     apps.open-cluster-management.io/github-branch: main
     apps.open-cluster-management.io/reconcile-option: replace
 spec:
-  channel: $(NAMESPACE_NAME)/githubcom-hates52-acm-multicluster
+  channel: $(SAS_NAME)/githubcom-hates52-acm-multicluster
   placement:
     placementRef:
       kind: PlacementRule
