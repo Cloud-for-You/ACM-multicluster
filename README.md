@@ -13,6 +13,7 @@ Advance Cluster Management je v tomto pripade zamyslen jako management nasazovan
   - GitOps Operator (ArgoCD)
 - Imported Clusters
   - GitOps Operator (ArgoCD)
+  - Project Operator
 
 #### Popis FLOW
 Pomoci GitOps operatora jsou do HUBu nasazovany jednotlive aplikace (Application.app.k8s.io), ktere jsou dale distribuovany pomoci ACM na spravovane clustery.
