@@ -1,11 +1,11 @@
 apiVersion: ops.csas.cz/v1
 kind: Project
 metadata:
-  name: acm-sandbox
+  name: nginx-sample
   label:
     app: project
 spec:
-  description: ACM Sandbox project
+  description: ACM project pro nginx-sample aplikaci
   environments:
     - name: rakosnicek
       type: acm

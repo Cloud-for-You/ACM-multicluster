@@ -7,7 +7,7 @@ metadata:
 spec:
   destination:
     name: in-cluster
-    namespace: nginx-sample
+    namespace: nginx-sample-rakosnicek
     server: ''
   source:
     path: gitops/nginx-sample
