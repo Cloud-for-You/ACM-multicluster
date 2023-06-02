@@ -1,0 +1,17 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: minio-operator
+  labels:
+    app: minio-operator
+  annotations:
+    apps.open-cluster-management.io/github-path: _INSTALL_/01-ACM/configure-observability/optional-minio/minio-operator-manifests
+    apps.open-cluster-management.io/github-branch: main
+    apps.open-cluster-management.io/reconcile-option: replace
+spec:
+  channel: openshift-operators/githubcom-hates52-acm-multicluster
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: local-cluster
