@@ -1,0 +1,9 @@
+apiVersion: v1
+data:
+  config.env: ZXhwb3J0IE1JTklPX1JPT1RfUEFTU1dPUkQ9IkNQNU1YT0VXSlRFTkNUWFFZRkVYSFhJS1lCQldXTk1ZIgpleHBvcnQgTUlOSU9fU1RPUkFHRV9DTEFTU19TVEFOREFSRD0iRUM6MyIKZXhwb3J0IE1JTklPX0JST1dTRVI9Im9uIgpleHBvcnQgTUlOSU9fUk9PVF9VU0VSPSJLVEZOTEI0VTVWWTI1MlVGIgo=
+kind: Secret
+metadata:
+  labels:
+    v1.min.io/tenant: minio-s3
+  name: minio-s3-env-configuration
+type: Opaque

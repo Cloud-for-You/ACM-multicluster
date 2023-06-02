@@ -2,12 +2,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: minio-s3
+  name: minio-tenant
   namespace: openshift-gitops
 spec:
   destination:
     name: in-cluster
-    namespace: projects
+    namespace: minio-s3
     server: ''
   source:
     path: _INSTALL_/01-ACM/configure-observability/optional-minio/minio-tenant
@@ -15,3 +15,6 @@ spec:
     targetRevision: HEAD
   sources: []
   project: default
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
