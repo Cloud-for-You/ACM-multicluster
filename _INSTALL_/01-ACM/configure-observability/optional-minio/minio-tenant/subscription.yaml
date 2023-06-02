@@ -2,9 +2,9 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: minio-s3
+  name: minio-tenant
   labels:
-    app: minio-s3
+    app: minio-tenant
   annotations:
     apps.open-cluster-management.io/github-path: _INSTALL_/01-ACM/configure-observability/optional-minio/minio-tenant-manifests
     apps.open-cluster-management.io/github-branch: main
