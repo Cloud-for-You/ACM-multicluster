@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: projects
+  name: minio-operator
   namespace: openshift-gitops
 spec:
   destination:
