@@ -2,7 +2,6 @@ apiVersion: minio.min.io/v2
 kind: Tenant
 metadata:
   name: minio-s3
-  namespace: minio-s3
 scheduler:
   name: ""
 spec:

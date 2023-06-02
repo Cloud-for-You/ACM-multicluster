@@ -5,7 +5,6 @@ metadata:
   annotations:
     openshift.io/host.generated: "true"
   name: console
-  namespace: minio-s3
 spec:
   port:
     targetPort: https-console
@@ -25,7 +24,6 @@ metadata:
   annotations:
     openshift.io/host.generated: "true"
   name: minio
-  namespace: minio-s3
 spec:
   port:
     targetPort: https-minio
