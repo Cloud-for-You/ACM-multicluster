@@ -9,8 +9,13 @@ stringData:
   thanos.yaml: |
     type: s3
     config:
-      bucket: YOUR_S3_BUCKET
-      endpoint: YOUR_S3_ENDPOINT
-      insecure: true
-      access_key: YOUR_ACCESS_KEY
-      secret_key: YOUR_SECRET_KEY
+      bucket: acm-observability
+      endpoint: minio.minio-s3.svc.cluster.local
+      access_key: z3cRmdXOxND642AJ
+      secret_key: AkSQV4ah1zerNIPpv0t5GrARYrN884GB
+      insecure: false
+      #signature_version2: false
+      #put_user_metadata: {}
+      http_config:
+        idle_conn_timeout: 0s
+        insecure_skip_verify: true

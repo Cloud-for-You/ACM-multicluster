@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-observability-thanos-compact-0
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 100Gi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: data-observability-thanos-compact-0
+    namespace: open-cluster-management-observability
+  nfs:
+    path: /tprgnasbe01_dev_openshift_01/ocp4_hub/data-observability-thanos-compact-0
+    server: tprgnasbe01.vs.csin.cz
+  persistentVolumeReclaimPolicy: Retain

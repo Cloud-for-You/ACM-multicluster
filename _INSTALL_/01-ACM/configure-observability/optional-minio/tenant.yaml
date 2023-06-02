@@ -1,0 +1,54 @@
+apiVersion: minio.min.io/v2
+kind: Tenant
+metadata:
+  name: minio-s3
+  namespace: minio-s3
+scheduler:
+  name: ""
+spec:
+  configuration:
+    name: minio-s3-env-configuration
+  credsSecret:
+    name: minio-s3-secret
+  exposeServices:
+    console: true
+    minio: true
+  imagePullSecret: {}
+  mountPath: /export
+  pools:
+  - affinity:
+      podAntiAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+            - key: v1.min.io/tenant
+              operator: In
+              values:
+              - minio-s3
+            - key: v1.min.io/pool
+              operator: In
+              values:
+              - pool-0
+          topologyKey: kubernetes.io/hostname
+    name: pool-0
+    resources:
+      requests:
+        cpu: "2"
+        memory: 7Gi
+    runtimeClassName: ""
+    servers: 6
+    volumeClaimTemplate:
+      metadata:
+        name: data
+      spec:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          requests:
+            storage: "42949672960"
+        storageClassName: local-storage
+      status: {}
+    volumesPerServer: 1
+  requestAutoCert: true
+  users:
+  - name: minio-s3-user-0

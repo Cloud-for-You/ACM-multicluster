@@ -1,0 +1,59 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-observability-thanos-rule-0
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: data-observability-thanos-rule-0
+    namespace: open-cluster-management-observability
+  nfs:
+    path: /tprgnasbe01_dev_openshift_01/ocp4_hub/data-observability-thanos-rule-0
+    server: tprgnasbe01.vs.csin.cz
+  persistentVolumeReclaimPolicy: Retain
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-observability-thanos-rule-1
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: data-observability-thanos-rule-1
+    namespace: open-cluster-management-observability
+  nfs:
+    path: /tprgnasbe01_dev_openshift_01/ocp4_hub/data-observability-thanos-rule-1
+    server: tprgnasbe01.vs.csin.cz
+  persistentVolumeReclaimPolicy: Retain
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-observability-thanos-rule-2
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 1Gi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: data-observability-thanos-rule-2
+    namespace: open-cluster-management-observability
+  nfs:
+    path: /tprgnasbe01_dev_openshift_01/ocp4_hub/data-observability-thanos-rule-2
+    server: tprgnasbe01.vs.csin.cz
+  persistentVolumeReclaimPolicy: Retain

@@ -1,0 +1,59 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-observability-thanos-store-shard-0-0
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 10Gi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: data-observability-thanos-store-shard-0-0
+    namespace: open-cluster-management-observability
+  nfs:
+    path: /tprgnasbe01_dev_openshift_01/ocp4_hub/data-observability-thanos-store-shard-0-0
+    server: tprgnasbe01.vs.csin.cz
+  persistentVolumeReclaimPolicy: Retain
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-observability-thanos-store-shard-1-0
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 10Gi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: data-observability-thanos-store-shard-1-0
+    namespace: open-cluster-management-observability
+  nfs:
+    path: /tprgnasbe01_dev_openshift_01/ocp4_hub/data-observability-thanos-store-shard-1-0
+    server: tprgnasbe01.vs.csin.cz
+  persistentVolumeReclaimPolicy: Retain
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-observability-thanos-store-shard-2-0
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 10Gi
+  claimRef:
+    apiVersion: v1
+    kind: PersistentVolumeClaim
+    name: data-observability-thanos-store-shard-2-0
+    namespace: open-cluster-management-observability
+  nfs:
+    path: /tprgnasbe01_dev_openshift_01/ocp4_hub/data-observability-thanos-store-shard-2-0
+    server: tprgnasbe01.vs.csin.cz
+  persistentVolumeReclaimPolicy: Retain
