@@ -13,3 +13,6 @@ spec:
   channel: openshift-operators/githubcom-hates52-acm-multicluster
   placement:
     local: true
+    placementRef:
+      kind: PlacementRule
+      name: local-cluster
