@@ -5,6 +5,6 @@ kind: Kustomization
 namespace: minio-s3
 
 resources:
-- application.yaml
-- channel.yaml
-- subscription.yaml
+- minio-s3-env-configuration.yaml
+- tenant.yaml
+- route.yaml
