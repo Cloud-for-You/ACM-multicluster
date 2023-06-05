@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    v1.min.io/tenant: minio-s3
+  name: minio-test-user-0
+  namespace: minio-s3
+type: Opaque
+immutable: true
+data:
+  CONSOLE_ACCESS_KEY: UFg5UVRWc2lPZ2xOU1Z6ZQ==
+  CONSOLE_SECRET_KEY: NUhlaFZ5OHNGTnFlNEJSSGxPRHRIZ1BjMkRmMUhlNXE=
