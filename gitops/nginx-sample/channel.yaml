@@ -2,9 +2,9 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
 metadata:
-  name: githubcom-hates52-acm-multicluster
+  name: githubcom-cloud-for-you-acm-multicluster
   labels:
     app: $(SAS_NAME)
 spec:
-  pathname: https://github.com/hates52/ACM-multicluster.git
+  pathname: https://github.com/Cloud-for-You/ACM-multicluster.git
   type: GitHub

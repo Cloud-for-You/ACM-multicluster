@@ -11,8 +11,8 @@ stringData:
     config:
       bucket: acm-observability
       endpoint: minio.minio-s3.svc.cluster.local
-      access_key: z3cRmdXOxND642AJ
-      secret_key: AkSQV4ah1zerNIPpv0t5GrARYrN884GB
+      access_key: FkKGAiWBt9QKrKIi
+      secret_key: L0ZoMcdvDXm6qQneE9UqyoC1YBfSTXE3
       insecure: false
       #signature_version2: false
       #put_user_metadata: {}

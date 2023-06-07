@@ -11,7 +11,7 @@ spec:
     server: ''
   source:
     path: gitops/nginx-sample
-    repoURL: 'https://github.com/hates52/ACM-multicluster.git'
+    repoURL: 'https://github.com/Cloud-for-You/ACM-multicluster.git'
     targetRevision: HEAD
   sources: []
   project: default
